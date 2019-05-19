@@ -158,113 +158,98 @@
               <div class="col-md-12">
                 <div class="card">
                   <div class="header">
-                    <h4 class="title">Light Bootstrap Table Heading</h4>
-                    <p class="category">Created using Roboto Font Family</p>
+                    <h4 class="title">Filtros</h4>
                   </div>
                   <div class="content">
-                    <div class="typo-line">
-                      <h1>
-                        <p class="category">Header 1</p>
-                        Light Bootstrap Table Heading
-                      </h1>
-                    </div>
+                    <form>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label>Cuenta</label>
+                            <select class="form-control" name="tipeAccount">
+                              <option value="1">BANCO 1</option>
+                              <option value="2">Tarjeta ABC</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-group">
+                            <label>Tipo de Cuenta</label>
+                            <select class="form-control" name="tipeAccount">
+                              <option value="savingsaccount">Ahorros</option>
+                              <option value="currentaccount">Corriente</option>
+                              <option value="creditcard"
+                                >Tarjeta de Credito</option
+                              >
+                              <option value="loan">Prestamo</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <div class="form-group">
+                            <label>Tipo</label>
+                            <select class="form-control" name="tipeAccount">
+                              <option value="positive">+</option>
+                              <option value="negative">-</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label>Cetegoria</label>
+                            <select class="form-control" name="tipeAccount">
+                              <option value="1">Transporte</option>
+                              <option value="2">Comida</option>
+                              <option value="3">Oseo</option>
+                              <option value="4">Ropa</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
 
-                    <div class="typo-line">
-                      <h2>
-                        <p class="category">Header 2</p>
-                        Light Bootstrap Table Heading
-                      </h2>
-                    </div>
-                    <div class="typo-line">
-                      <h3>
-                        <p class="category">Header 3</p>
-                        Light Bootstrap Table Heading
-                      </h3>
-                    </div>
-                    <div class="typo-line">
-                      <h4>
-                        <p class="category">Header 4</p>
-                        Light Bootstrap Table Heading
-                      </h4>
-                    </div>
-                    <div class="typo-line">
-                      <h5>
-                        <p class="category">Header 5</p>
-                        Light Bootstrap Table Heading
-                      </h5>
-                    </div>
-                    <div class="typo-line">
-                      <h6>
-                        <p class="category">Header 6</p>
-                        Light Bootstrap Table Heading
-                      </h6>
-                    </div>
-                    <div class="typo-line">
-                      <p>
-                        <span class="category">Paragraph</span>Lorem ipsum dolor
-                        sit amet, consectetuer adipiscing elit, sed diam nonummy
-                        nibh euismod tincidunt ut laoreet dolore magna aliquam
-                        erat volutpat. Ut wisi enim ad minim veniam.
-                      </p>
-                    </div>
-                    <div class="typo-line">
-                      <p class="category">Quote</p>
-                      <blockquote>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetuer adipiscing
-                          elit, sed diam nonummy nibh euismod tincidunt ut
-                          laoreet dolore magna aliquam erat volutpat. Ut wisi
-                          enim ad minim veniam.
-                        </p>
-                        <small>
-                          Steve Jobs, CEO Apple
-                        </small>
-                      </blockquote>
-                    </div>
+                      <button
+                        type="submit"
+                        class="btn btn-info btn-fill pull-right"
+                      >
+                        Filtrar
+                      </button>
+                      <div class="clearfix"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
 
-                    <div class="typo-line">
-                      <p class="category">Muted Text</p>
-                      <p class="text-muted">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut
-                        laoreet.
-                      </p>
-                    </div>
-                    <div class="typo-line">
-                      <!--
-                                     there are also "text-info", "text-success", "text-warning", "text-danger" clases for the text
-                                     -->
-                      <p class="category">Coloured Text</p>
-                      <p class="text-primary">
-                        Text Primary - Light Bootstrap Table Heading and complex
-                        bootstrap dashboard you've ever seen on the internet.
-                      </p>
-                      <p class="text-info">
-                        Text Info - Light Bootstrap Table Heading and complex
-                        bootstrap dashboard you've ever seen on the internet.
-                      </p>
-                      <p class="text-success">
-                        Text Success - Light Bootstrap Table Heading and complex
-                        bootstrap dashboard you've ever seen on the internet.
-                      </p>
-                      <p class="text-warning">
-                        Text Warning - Light Bootstrap Table Heading and complex
-                        bootstrap dashboard you've ever seen on the internet.
-                      </p>
-                      <p class="text-danger">
-                        Text Danger - Light Bootstrap Table Heading and complex
-                        bootstrap dashboard you've ever seen on the internet.
-                      </p>
-                    </div>
-
-                    <div class="typo-line">
-                      <h2>
-                        <p class="category">Small Tag</p>
-                        Header with small subtitle <br /><small
-                          >".small" is a tag for the headers</small
-                        >
-                      </h2>
-                    </div>
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="header">
+                    <h4 class="title">Mis Gastos</h4>
+                  </div>
+                  <div class="content table-responsive table-full-width">
+                    <table class="table table-hover table-striped">
+                      <thead>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Monto</th>
+                        <th>Categoria</th>
+                        <th></th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Compra 1</td>
+                          <td>Ahorros</td>
+                          <td>$36.738</td>
+                          <td>Comida</td>
+                          <td>
+                            <button
+                              type="submit"
+                              class="btn btn-info btn-fill pull-left"
+                            >
+                              Editar
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
@@ -314,12 +299,6 @@
 
   <!--  Notifications Plugin    -->
   <script src="../assets/js/bootstrap-notify.js"></script>
-
-  <!--  Google Maps Plugin    -->
-  <script
-    type="text/javascript"
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
-  ></script>
 
   <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
   <script src="../assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>

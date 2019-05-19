@@ -155,130 +155,92 @@
         <div class="content">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-8">
                 <div class="card">
                   <div class="header">
-                    <h4 class="title">Striped Table with Hover</h4>
-                    <p class="category">Here is a subtitle for this table</p>
+                    <h4 class="title">Registrar Gasto</h4>
                   </div>
-                  <div class="content table-responsive table-full-width">
-                    <table class="table table-hover table-striped">
-                      <thead>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Salary</th>
-                        <th>Country</th>
-                        <th>City</th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>Dakota Rice</td>
-                          <td>$36,738</td>
-                          <td>Niger</td>
-                          <td>Oud-Turnhout</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>Minerva Hooper</td>
-                          <td>$23,789</td>
-                          <td>Curaçao</td>
-                          <td>Sinaai-Waas</td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>Sage Rodriguez</td>
-                          <td>$56,142</td>
-                          <td>Netherlands</td>
-                          <td>Baileux</td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>Philip Chaney</td>
-                          <td>$38,735</td>
-                          <td>Korea, South</td>
-                          <td>Overland Park</td>
-                        </tr>
-                        <tr>
-                          <td>5</td>
-                          <td>Doris Greene</td>
-                          <td>$63,542</td>
-                          <td>Malawi</td>
-                          <td>Feldkirchen in Kärnten</td>
-                        </tr>
-                        <tr>
-                          <td>6</td>
-                          <td>Mason Porter</td>
-                          <td>$78,615</td>
-                          <td>Chile</td>
-                          <td>Gloucester</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
+                  <div class="content">
+                    <form>
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <label>Nombre del Gasto</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Nombre Gasto"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <label>Tipo de Gasto</label>
+                            <select class="form-control" name="tipeAccount">
+                              <option value="positive">+</option>
+                              <option value="negative">-</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
 
-              <div class="col-md-12">
-                <div class="card card-plain">
-                  <div class="header">
-                    <h4 class="title">Table on Plain Background</h4>
-                    <p class="category">Here is a subtitle for this table</p>
-                  </div>
-                  <div class="content table-responsive table-full-width">
-                    <table class="table table-hover">
-                      <thead>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Salary</th>
-                        <th>Country</th>
-                        <th>City</th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>Dakota Rice</td>
-                          <td>$36,738</td>
-                          <td>Niger</td>
-                          <td>Oud-Turnhout</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>Minerva Hooper</td>
-                          <td>$23,789</td>
-                          <td>Curaçao</td>
-                          <td>Sinaai-Waas</td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>Sage Rodriguez</td>
-                          <td>$56,142</td>
-                          <td>Netherlands</td>
-                          <td>Baileux</td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>Philip Chaney</td>
-                          <td>$38,735</td>
-                          <td>Korea, South</td>
-                          <td>Overland Park</td>
-                        </tr>
-                        <tr>
-                          <td>5</td>
-                          <td>Doris Greene</td>
-                          <td>$63,542</td>
-                          <td>Malawi</td>
-                          <td>Feldkirchen in Kärnten</td>
-                        </tr>
-                        <tr>
-                          <td>6</td>
-                          <td>Mason Porter</td>
-                          <td>$78,615</td>
-                          <td>Chile</td>
-                          <td>Gloucester</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label>Monto</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Monto"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label>Categoria</label>
+                            <select class="form-control" name="category">
+                              <option value="trans">Transporte</option>
+                              <option value="food">Comida</option>
+                              <option value="market">Mercado</option>
+                              <option value="clothing">Ropa</option>
+                              <option value="osseous">Oseo</option>
+                              <option value="other">Otro</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label>Otro/Cual?</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Other"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label>Cuenta</label>
+                            <select class="form-control" name="tipeAccount">
+                              <option value="1">Ahorros</option>
+                              <option value="2">Credito 1</option>
+                              <option value="3">Tarjeta de credito ABC</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button
+                        type="submit"
+                        class="btn btn-info btn-fill pull-right"
+                      >
+                        Crear Gasto
+                      </button>
+                      <div class="clearfix"></div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -328,12 +290,6 @@
 
   <!--  Notifications Plugin    -->
   <script src="../assets/js/bootstrap-notify.js"></script>
-
-  <!--  Google Maps Plugin    -->
-  <script
-    type="text/javascript"
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
-  ></script>
 
   <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
   <script src="../assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
