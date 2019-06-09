@@ -272,13 +272,14 @@ demo = {
 
   showMapa: function() {
     var content = document.getElementById('contentMap');
-    if (content.style.display != 'none') {
-      content.style.display = 'none';
+    if (content.style.display == '' || content.style.display == 'none') {
+      content.style.display = 'block';
+      demo.initGoogleMaps();
+
       return;
     }
 
-    content.style.display = 'block';
-    demo.initGoogleMaps();
+    content.style.display = 'none';
   },
 
   filterInformationExpenses: function() {
