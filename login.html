@@ -15,18 +15,27 @@
         alt="CONTROL DE GASTOS"
       />
       <h1>login Here</h1>
-      <form>
-        <label for="username">Username</label>
-        <input type="text" placeholder="Enter Username" />
+      <form action="login.php" method="POST">
+        <label for="username">Correo</label>
+        <input
+          type="text"
+          name="username"
+          placeholder="Ingrrese su Correo"
+          required
+        />
 
         <label for="password">password</label>
-        <input type="password" placeholder="Enter password" />
-      </form>
-      <a href="dashboard.html">
+        <input
+          type="password"
+          name="password"
+          placeholder="Ingrese su contraseña"
+          required
+        />
         <input type="submit" value="Login" name="Submit" id="frm1_submit" />
-      </a>
+      </form>
+
       <a href="#"> Lost your password?</a><br />
-      <a href="#">Don´t have An account?</a>
+      <a href="/signup.html">Don´t have An account?</a>
     </div>
   </body>
 </html>
